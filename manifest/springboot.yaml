@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ultimate-cicd-deployment
+spec:
+  replicas: 2  # You can adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: ultimate-cicd
+  template:
+    metadata:
+      labels:
+        app: ultimate-cicd
+    spec:
+      containers:
+      - name: ultimate-cicd-container
+        image: abhishekf5/ultimate-cicd:replaceImageTag
+        ports:
+        - containerPort: 80
