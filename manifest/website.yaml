@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: website-deployment
 spec:
-  replicas: 5  # You can adjust the number of replicas as needed
+  replicas: 3  # You can adjust the number of replicas as needed
   selector:
     matchLabels:
       app: website
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: website-container
-        image: lubern5/webapp:latest
+        image: lubern5/webapp
         ports:
         - containerPort: 80
