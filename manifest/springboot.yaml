@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ultimate-cicd-container
-        image: lubern5/devops-qr-code
+        image: lubern5/devops-qr-code:latest
         ports:
         - containerPort: 80
