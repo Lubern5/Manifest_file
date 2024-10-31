@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: website-container
-        image: lubern5/lu-portfolio-website:latest
+        image: lubern5/lu-portfolio-website
         ports:
         - containerPort: 80
