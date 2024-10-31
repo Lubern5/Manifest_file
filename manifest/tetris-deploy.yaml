@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: tetris-container
-        image: nasi101/tetris:latest
+        image: nasi101/tetris
         ports:
         - containerPort: 80
